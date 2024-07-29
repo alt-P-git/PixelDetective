@@ -1,0 +1,11 @@
+/.gradle/
+/build/
+local.properties
+bin/
+.iws
+.ipr
+.iml
+.apk
+.ap_
+.log
+proguard

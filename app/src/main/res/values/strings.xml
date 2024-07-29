@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Image Finder</string>
+    <string name="com_auth0_scheme">demo</string>
+</resources>
