@@ -9,3 +9,4 @@ bin/
 .ap_
 .log
 proguard
+/app/build/
