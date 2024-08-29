@@ -15,18 +15,19 @@
         app:cardBackgroundColor="#323649">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
             <com.makeramen.roundedimageview.RoundedImageView
                 android:id="@+id/ivActor"
                 android:layout_width="120dp"
                 app:riv_corner_radius="8dp"
                 android:elevation="10dp"
-                android:layout_height="120dp"
+                android:layout_height="match_parent"
                 android:scaleType="centerCrop" />
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:orientation="vertical">
 
@@ -40,13 +41,13 @@
                     android:paddingEnd="5dp"
                     android:text="Robert Pattinson"
                     android:textColor="@color/white"
-                    android:textSize="17sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -57,7 +58,7 @@
                         android:fontFamily="@font/manrope_bold"
                         android:text="Domain: "
                         android:textColor="@color/white"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -69,14 +70,15 @@
                         android:fontFamily="@font/manrope_semibold"
                         android:text="Batman"
                         android:textColor="#B6B6B6"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingVertical="8.dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -86,7 +88,7 @@
                         android:fontFamily="@font/manrope_bold"
                         android:text="Link: "
                         android:textColor="@color/white"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -98,9 +100,23 @@
                         android:fontFamily="@font/manrope_semibold"
                         android:text="Batman"
                         android:textColor="#B6B6B6"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/noticeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="12dp"
+                    android:text="Generate AI Notice"
+                    android:textColor="@color/primary_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center"/>
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

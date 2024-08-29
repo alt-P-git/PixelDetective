@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File: res/values/styles.xml -->
+<resources>
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/background_blue</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabTextColor">@color/black</item>
+        <item name="tabBackground">@drawable/tab_background</item>
+    </style>
+
+    <style name="CustomImageButton" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">@drawable/rounded_corners</item>
+    </style>
+</resources>

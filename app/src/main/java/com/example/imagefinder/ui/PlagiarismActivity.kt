@@ -15,7 +15,6 @@ import dagger.hilt.android.AndroidEntryPoint
 class PlagiarismActivity : AppCompatActivity() {
     private var binding: ActivityPlagiarismBinding? = null
     lateinit var viewModel: ImageViewModel
-    lateinit var viewModel3: ImageViewModel3
     private var reverseSearchImages: ReverseSearchImageModel? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +28,6 @@ class PlagiarismActivity : AppCompatActivity() {
         {
             val value: String = binding?.etImage?.text.toString()
             viewModel.getReverseSearchImage(value!!)
-            Log.e("Notice:" , viewModel.writeAINotice("LinkedIn").toString())
 
             viewModel.reverseSearchImageResponse.observe(this) {
                 if (it != null) {
@@ -65,5 +63,3 @@ class PlagiarismActivity : AppCompatActivity() {
         }
     }
 }
-
-

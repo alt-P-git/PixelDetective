@@ -19,6 +19,7 @@ class ReverseSearchAdapter(private val context: Context, private val reverseImag
         val tvDomain = binding?.tvDomain
         val tvLink = binding?.tvLink
         val ivImage = binding?.ivActor
+        val noticeButton = binding.noticeButton
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -47,6 +48,13 @@ class ReverseSearchAdapter(private val context: Context, private val reverseImag
         Glide.with(context)
             .load(model.image)
             .into(holder?.ivImage!!)
+
+        holder.noticeButton.setOnClickListener {
+            val intent = Intent(context, AiNoticeActivity::class.java).apply {
+                putExtra("DOMAIN", model.domain)
+            }
+            context.startActivity(intent)
+        }
     }
 
 }
