@@ -9,23 +9,21 @@ PixelDetective is an application designed to protect users' visual content on th
 ![App Screenshot](images/Screenshot2.png)
 ![App Screenshot](images/Screenshot3.png)
 ![App Screenshot](images/Screenshot4.png)
-
+![App Screenshot](images/Screenshot5.png)
 
 ## Features
 
 - Picture Detection:
    - Users can sign up for an account on PixelDetective and enter the url of the pictures from online platforms they want to monitor for unauthorized usage.
    - Monitor multiple online platforms to track the usage of your pictures without permission.
+   - Users can generate a notice using AI in three different modes: Friendly, Formal and Aggressive.
 
 - Deepfake Detection:
 
    - Users can upload both images and videos to the application for analysis.
    - PixelDetective employs state-of-the-art deepfake detection techniques to analyze media files.
    - The application provides users with detailed insights into the authenticity of the uploaded media, highlighting potential manipulations or deepfake elements.
-   -
-   -
-  - Utilize advanced algorithms to analyze images and videos for signs of manipulation or deepfake content.
-  - Gain insights into the authenticity of media files and protect against malicious alterations.
+   - Gain insights into the authenticity of media files and protect against malicious alterations.
     
 ## Usage
 
